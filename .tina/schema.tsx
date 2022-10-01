@@ -10,10 +10,10 @@ import {
   NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF,
   TINA_GIT_HEAD,
   TINA_TOKEN,
-  TINA_CLIENT_ID,
+  NEXT_PUBLIC_TINA_CLIENT_ID,
 } from '../lib/env';
 console.log('TINA_TOKEN', TINA_TOKEN);
-console.log('TINA_CLIENT_ID', TINA_CLIENT_ID);
+console.log('TINA_CLIENT_ID', NEXT_PUBLIC_TINA_CLIENT_ID);
 const branch =
   NEXT_PUBLIC_TINA_BRANCH ||
   NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
@@ -24,7 +24,7 @@ const schema = defineSchema({
   // See https://tina.io/docs/tina-cloud/connecting-site/ for more information about this config
   config: {
     token: TINA_TOKEN, // generated on app.tina.io,
-    clientId: TINA_CLIENT_ID, // generated on app.tina.io
+    clientId: NEXT_PUBLIC_TINA_CLIENT_ID, // generated on app.tina.io
     branch,
   },
   collections: [schemaTag, schemaPost, schemaWork],
