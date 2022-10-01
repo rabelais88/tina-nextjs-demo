@@ -12,8 +12,11 @@ import {
   TINA_TOKEN,
   NEXT_PUBLIC_TINA_CLIENT_ID,
 } from '../lib/env';
-console.log('TINA_TOKEN', TINA_TOKEN);
-console.log('NEXT_PUBLIC_TINA_CLIENT_ID', NEXT_PUBLIC_TINA_CLIENT_ID);
+console.log('TINA_TOKEN', `${TINA_TOKEN?.slice(0, 2)}****`);
+console.log(
+  'NEXT_PUBLIC_TINA_CLIENT_ID',
+  `${NEXT_PUBLIC_TINA_CLIENT_ID?.slice(0, 2)}****`
+);
 const branch =
   NEXT_PUBLIC_TINA_BRANCH ||
   NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
