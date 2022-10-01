@@ -23,8 +23,8 @@ const branch =
 const schema = defineSchema({
   // See https://tina.io/docs/tina-cloud/connecting-site/ for more information about this config
   config: {
-    token: '<Your Read Only Token>', // generated on app.tina.io,
-    clientId: '<Your Client ID>', // generated on app.tina.io
+    token: TINA_TOKEN, // generated on app.tina.io,
+    clientId: TINA_CLIENT_ID, // generated on app.tina.io
     branch,
   },
   collections: [schemaTag, schemaPost, schemaWork],
