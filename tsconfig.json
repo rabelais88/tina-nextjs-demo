@@ -18,7 +18,9 @@
     "paths": {
       "@/*": ["./*"],
       "@lib/*": ["./lib/*"]
-    }
+    },
+    "typeRoots": ["./types"],
+    "types": ["./types/index.d.ts"]
   },
   "include": [
     "next-env.d.ts",
@@ -26,7 +28,8 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    ".tina/**/*.ts"
+    ".tina/**/*.ts",
+    ".tina/schema.tsx"
   ],
   "exclude": ["node_modules"]
 }
