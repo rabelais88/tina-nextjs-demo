@@ -19,8 +19,7 @@
       "@/*": ["./*"],
       "@lib/*": ["./lib/*"]
     },
-    "typeRoots": ["./types"],
-    "types": ["./types/index.d.ts"]
+    "typeRoots": ["./types"]
   },
   "include": [
     "next-env.d.ts",
