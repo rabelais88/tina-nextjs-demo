@@ -13,7 +13,7 @@ import {
   NEXT_PUBLIC_TINA_CLIENT_ID,
 } from '../lib/env';
 console.log('TINA_TOKEN', TINA_TOKEN);
-console.log('TINA_CLIENT_ID', NEXT_PUBLIC_TINA_CLIENT_ID);
+console.log('NEXT_PUBLIC_TINA_CLIENT_ID', NEXT_PUBLIC_TINA_CLIENT_ID);
 const branch =
   NEXT_PUBLIC_TINA_BRANCH ||
   NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
@@ -35,6 +35,7 @@ export default schema;
 // Your tina config
 
 export const tinaConfig = defineConfig({
+  // @ts-ignore
   client,
   schema,
 });
