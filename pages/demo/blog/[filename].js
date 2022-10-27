@@ -69,7 +69,7 @@ const BlogPage = (props) => {
           <h1 className="text-3xl m-8 text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             {data?.post?.title}
           </h1>
-          <ContentSection content={data?.post?.body}></ContentSection>
+          <ContentSection content={data?.post?.content}></ContentSection>
         </div>
         <div className="bg-green-100 text-center">
           Lost and looking for a place to start?

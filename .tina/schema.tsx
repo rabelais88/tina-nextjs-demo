@@ -29,6 +29,12 @@ const schema = defineSchema({
     token: TINA_TOKEN, // generated on app.tina.io,
     clientId: NEXT_PUBLIC_TINA_CLIENT_ID, // generated on app.tina.io
     branch,
+    media: {
+      tina: {
+        publicFolder: 'public',
+        mediaRoot: 'user-content',
+      },
+    },
   },
   collections: [schemaTag, schemaPost, schemaWork],
 });
